@@ -1,0 +1,194 @@
+﻿body {
+    box-sizing: border-box;
+}
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+/* Ẩn các slider */
+.mySlides {
+    display: none;
+}
+/* Định dạng nội dung Caption */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* định dạng các chấm chuyển đổi các slide */
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+    /* khi được hover, active đổi màu nền */
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+/* Thêm hiệu ứng khi chuyển đổi các slide */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+aside {
+    display: block;
+    vertical-align: auto;
+    padding: 5px;
+    line-height: 30px;
+    height: 1200px;
+}
+
+/*article{
+    display:block;
+    height:300px;
+    padding:5px;
+    float: right;
+    text-align:center;
+    border-block-style: solid;
+}*/
+
+section {
+    display: block;
+    float: right;
+    text-align: center;
+    padding: 5px;
+    height: 300px;
+    
+}
+
+.sidecheck {
+    text-align: left;
+    width: 250px;
+    margin-block: auto;
+    background-color: #EEEEEE;
+    padding: 5px;
+}
+
+/*.title{
+    text-align:justify;
+    height:100px;
+    width:75%;
+    display:flex
+}*/
+
+#menu {
+    margin-top: auto;
+}
+
+    #menu ul {
+        list-style-type: none;
+        text-align: right;
+    }
+
+    #menu li {
+        display: inline-block;
+        width: 100px;
+        height: 40px;
+        line-height: 5px
+    }
+
+    #menu img {
+        text-decoration: none;
+        display: block;
+    }
+
+
+.main-content {
+    width: 100%;
+    height: 1200px;
+    padding: 5px;
+}
+
+
+
+#pre {
+    margin: 4px 7px 2px 4px;
+}
+
+#menu1 ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#menu1 li {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+}
+
+#menu1 ul li a {
+    text-decoration: none;
+    display: block;
+}
+
+    #menu1 ul li a:hover {
+        color: #0C0A0A;
+    }
+
+.list {
+    box-sizing: border-box;
+    column-gap: 50px;
+}
+
+    .list img {
+        float: left;
+        width: 200px;
+        height: 100px;
+        line-height: 15px;
+    }
+#dt{
+    text-align: center;
+    width:300px;
+    height: 200px;
+}
+    #dt img {
+        float: left;
+        width: 260px;
+        height: 200px;
+        line-height: 15px;
+    }
+#dt fieldset{
+    width: 270px;
+    height: 420px;
+}
+
+.st{
+    display:contents;
+    text-align:center;
+}

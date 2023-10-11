@@ -1,0 +1,960 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="StyleSheet.css" />
+    <title>Điện thoại | Smartphone chính hãng giá rẻ, trợ giá lên đời</title>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="ảnh/pic1.jpg" style="width:100%" />
+        </div>
+
+        <div class="mySlides fade">
+            <img src="ảnh/pic2.jpg" style="width:100%" />
+        </div>
+
+        <div class="mySlides fade">
+            <img src="ảnh/pic3.jpg" style="width:100%" />
+        </div>
+
+        <div class="mySlides fade">
+            <img src="ảnh/pic4.jpg" style="width:100%" />
+        </div>
+
+        <div class="mySlides fade">
+            <img src="ảnh/pic5.jpg" style="width:100%" />
+        </div>
+
+        <div class="mySlides fade">
+            <img src="ảnh/pic6.jpg" style="width:100%" />
+        </div>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <script>
+        var slideIndex;
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex].style.display = "block";
+            dots[slideIndex].className += " active";
+
+            slideIndex++;
+            if (slideIndex > slides.length - 1) {
+                slideIndex = 0
+            }
+            setTimeout(showSlides, 10000);
+        }
+
+        showSlides(slideIndex = 0);
+
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    </script>
+
+    <aside>
+        <div class="main-content">
+            <div class="sidecheck">
+                <h3 style="text-decoration-color:black">Hãng sản xuất</h3>
+                <br />
+                <form>
+                    <input type="checkbox" name="brand" value="Tất cả">Tất cả
+                    <input type="checkbox" name="brand" value="Apple (iPhone)">Apple (iPhone)<br />
+                    <a name="apple-iphone"></a>
+                    <input type="checkbox" name="brand" value="Samsung">Samsung
+                    <a name="samsung"></a>
+                    <input type="checkbox" name="brand" value="Oppo">Oppo<br />
+                    <a name="oppo"></a>
+                    <input type="checkbox" name="brand" value="Xiaomi">Xiaomi
+                    <a name="xiaomi"></a>
+                    <input type="checkbox" name="brand" value="Honor">Honor<br />
+                    <a name="honor"></a>
+                    <input type="checkbox" name="brand" value="Realme">Realme
+                    <a name="realme"></a>
+                    <input type="checkbox" name="brand" value="Vivo">Vivo<br />
+                    <a name="vivo"></a>
+                    <input type="checkbox" name="brand" value="Asus">Asus
+                    <a name="asus"></a>
+                    <input type="checkbox" name="brand" value="Masstel">Masstel<br />
+                    <a name="masstel"></a>
+                    <input type="checkbox" name="brand" value="Nokia">Nokia
+                    <a name="nokia"></a>
+                </form>
+                <br />
+                <h3 style="text-decoration-color:black">Mức giá</h3>
+                <br />
+                <form>
+                    <input type="checkbox" name="price" value="Tất cả">Tất cả<br />
+                    <input type="checkbox" name="price" value="Dưới 2 triệu">Dưới 2 triệu<br />
+                    <input type="checkbox" name="price" value="Từ 2-4 triệu">Từ 2-4 triệu<br />
+                    <input type="checkbox" name="price" value="Từ 4-7 triệu">Từ 4-7 triệu<br />
+                    <input type="checkbox" name="price" value="Từ 7-13 triệu">Từ 7-13 triệu<br />
+                    <input type="checkbox" name="price" value="Trên 13 triệu">Trên 13 triệu<br />
+                </form>
+                <br />
+                <h3 style="text-decoration-color:black">Tính năng đặc biệt</h3>
+                <br />
+                <form>
+                    <input type="checkbox" name="fc" value="Tất cả">Tất cả<br />
+                    <input type="checkbox" name="fc" value="Bảo mật vân tay">Bảo mật vân tay<br />
+                    <input type="checkbox" name="fc" value="Nhận diện khuôn mặt">Nhận diện khuôn mặt<br />
+                    <input type="checkbox" name="fc" value="Chống nước & bụi">Chống nước & bụi<br />
+                    <input type="checkbox" name="fc" value="Sạc nhanh">Sạc nhanh<br />
+                    <input type="checkbox" name="fc" value="Sạc không dây">Sạc không dây<br />
+                </form>
+                <br />
+                <h3 style="text-decoration-color:black">Hiệu năng và pin</h3>
+                <br />
+                <form>
+                    <input type="checkbox" name="Hp" value="Tất cả">Tất cả<br />
+                    <input type="checkbox" name="Hp" value="Dưới 3000 mah">Dưới 3000 mah<br />
+                    <input type="checkbox" name="Hp" value="Pin từ 3000-4000 mah">Pin từ 3000-4000 mah<br />
+                    <input type="checkbox" name="Hp" value="Pin từ 4000-5000 mah">Pin từ 4000-5000 mah<br />
+                    <input type="checkbox" name="Hp" value="Siêu trâu: trên 5000 mah">Siêu trâu: trên 5000 mah<br />
+                    <input type="checkbox" name="Hp" value="Chơi game/cấu hình cao">Chơi game/cấu hình cao<br />
+                </form>
+                <br />
+                <h3 style="text-decoration-color:black">Màn hình</h3>
+                <br />
+                <form>
+                    <input type="checkbox" name="screen" value="Tất cả">Tất cả<br />
+                    <input type="checkbox" name="screen" value="Màn hình nhỏ: dưới 5.0 inch">Màn hình nhỏ: dưới 5.0 inch<br />
+                    <input type="checkbox" name="screen" value="Nhỏ gọn vừa tay: dưới 6.0 inch">Nhỏ gọn vừa tay: dưới 6.0 inch<br />
+                    <input type="checkbox" name="screen" value="Trên 6.0 inch">Trên 6.0 inch<br />
+                    <input type="checkbox" name="screen" value="Màn hình gập">Màn hình gập<br />
+                </form>
+                <br />
+                <h3 style="text-decoration-color:black">Camera</h3>
+                <br />
+                <form>
+                    <input type="checkbox" name="cam" value="Tất cả">Tất cả<br />
+                    <input type="checkbox" name="cam" value="Quay phim slow motion">Quay phim slow motion<br />
+                    <input type="checkbox" name="cam" value="Ai camera">Ai camera<br />
+                    <input type="checkbox" name="cam" value="Hiệu ứng làm đẹp">Hiệu ứng làm đẹp<br />
+                    <input type="checkbox" name="cam" value="Zoom quang học">Zoom quang học<br />
+                    <input type="checkbox" name="cam" value="Chống rung ios">Chống rung ios<br />
+                    <input type="checkbox" name="cam" value="Chụp macro">Chụp macro<br />
+                    <input type="checkbox" name="cam" value="Chụp góc rộng">Chụp góc rộng<br />
+                </form>
+            </div>
+        </div>
+    </aside>
+    <section>
+        <div id="menu">
+            <h2 style="text-decoration-color:black" text-align="center">Điện thoại (285 sản phẩm)</h2>
+            <ul>
+                <li><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340490193124614_iPhone-Apple@2x.jpg" alt="Apple (iPhone)" /></li>
+                <li><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340490904217021_Samsung@2x.jpg" alt="Samsung" /></li>
+                <li><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340491304997311_Oppo@2x.jpg" alt="Oppo" /></li>
+                <li><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/6/2/637582325361253577_Xiaomi@2x.jpg" alt="Xiaomi" /></li>
+                <li><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/6/29/638236346599640251_Honor.jpg" alt="Honor" /></li>
+                <li><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340491898745716_Realme@2x.jpg" alt="realme" /></li>
+                <li><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/8/22/637967768466618842_vivo-icon.jpg" alt="Vivo" /></li>
+                <li><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/11/22/637732077455069770_Asus@2x.jpg" alt="Asus" /></li>
+                <li><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340491898901930_Masstel@2x.jpg" alt="Masstel" /></li>
+                <li><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340493755614653_Nokia@2x.jpg" alt="Nokia" /></li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div id="menu1">
+            <ul>
+                <li><h3>Ưu tiên xem:</h3></li>
+                <li><a href="#">Bán chạy nhất</a></li>
+                <li><a href="#">Trả góp 0%</a></li>
+                <li><a href="#">Giá thấp</a></li>
+                <li><a href="#">Giá cao</a></li>
+                <li><a href="#">Ưu đãi online</a></li>
+            </ul>
+        </div>
+        <table class="list">
+            <tr>
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh sp1/ip-15-pro-max-dd.png" />
+                        <a href="#iPhone 15 Pro Max 256GB">iPhone 15 Pro Max 256GB</a>
+                        <p>256GB | 512GB | 1TB</p>
+                        <p>
+                            <span style="color:red;font-size:20px">34.990.000đ</span> &nbsp;&nbsp; chỉ từ<br />
+                            <span style="color:black;font-size:15px;text-align:right">4.694.500đ</span>/tháng
+                        </p>
+                        <p>
+                            Apple A17 Pro | 6.7 inch | 8GB |<br />
+                            256 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh sp1/ss-galaxy-s22-dd-icon.png" />
+                        <a href="#Samsung Galaxy S22 5G 128GB">Samsung Galaxy S22 5G 128GB</a>
+                        <br /><br /><br />
+                        <p>
+                            <span style="color:red;font-size:20px">11.990.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-10.000.000đ</span>
+                        </p>
+                        <p>
+                            Snapdragon 8 Gen 1 | 6.1 inch | 8GB |<br />
+                            128 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh sp1/oppo-reno8-t-4g-dd.png" />
+                        <a href="#Oppo Reno8 T 4G 256GB">Oppo Reno8 T 4G 256GB</a>
+                        <p>4G | 5G</p>
+                        <p>
+                            <span style="color:red;font-size:20px">7.290.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-1.200.000đ</span>
+                        </p>
+                        <p>
+                            MediaTek Helio G99 | 6.4 inch | 8GB |<br />
+                            256 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+
+                    </fieldset>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh sp1/Honor-X8A-8GB-128GB.jpg" />
+                        <a href="#Honor X8A 8GB-128GB">Honor X8A 8GB-128GB</a>
+
+                        <p>
+                            <span style="color:red;font-size:20px">3.990.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-1.000.000đ</span>
+                        </p>
+                        <p>
+                            MediaTek Helio G99 | 6.4 inch | 8GB |<br />
+                            256 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh sp1/Xiaomi-Redmi-Note-12-4Gb-128gb.jpg" />
+                        <a href="#Xiaomi Redmi Note 12 4GB-128GB">Xiaomi Redmi Note 12 4GB-128GB</a>
+
+                        <p>4GB - 128GB | 8GB - 128GB</p>
+
+                        <p>
+                            <span style="color:red;font-size:20px">4.290.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-700.000đ</span>
+                        </p>
+                        <p>
+                            4GB | 128GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh sp1/samsung-galaxy-a05s-dd-moi.png" />
+                        <a href="#Samsung Galaxy A05s 128GB">Samsung Galaxy A05s 128GB</a>
+
+                        <p>
+                            <span style="color:red;font-size:20px">3.990.000đ</span> &nbsp;&nbsp; chỉ từ<br />
+                            <span style="color:black;font-size:15px;text-align:right">709.500đ</span>/tháng
+                        </p>
+                        <p>
+                            Snapdragon 680 | 6.7 inch |<br />
+                            8GB | 256 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh sp1/oppo-reno10-5g.jpg" />
+                        <a href="#OPPO Reno10 5G 256GB">OPPO Reno10 5G 256GB</a>
+                        <p>256GB | 128GB </p>
+                        <p>
+                            <span style="color:red;font-size:20px">10.490.000đ</span> &nbsp;&nbsp; chỉ từ<br />
+                            <span style="color:black;font-size:15px;text-align:right">500.000đ</span>/4 ngày
+                        </p>
+                        <p>
+                            MediaTek Dimensity 7050 5G <br />
+                            | 6.7 inch | 8GB | 256 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh sp1/samsung-Galaxy-Z-Flip4-5G-128GB.jpg" />
+                        <a href="#Samsung Galaxy Z Flip4 5G 128GB">Samsung Galaxy Z Flip4 5G 128GB</a>
+                        <br /><br />
+                        <p>
+                            <span style="color:red;font-size:20px">12.990.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-11.000.000đ</span>/4 ngày
+                        </p>
+                        <p>
+                            Snapdragon 8+ Gen 1 <br />| 6.1 inch, 1.9 inch | <br />
+                            8GB | 128 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh sp1/Samsung-Galaxy-A34-5G.jpg" />
+                        <a href="#Samsung Galaxy A34 5G">Samsung Galaxy A34 5G</a>
+
+                        <p>
+                            <span style="color:red;font-size:20px">6.990.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-1.500.000đ</span>
+                        </p>
+                        <p>
+                            MediaTek Dimensity 1080 <br />
+                            | 6.4 inch | 8GB | 256 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+
+        <div id="menu1">
+            <ul>
+                <li><h3>Ưu tiên xem:</h3></li>
+                <li><a href="#">Bán chạy nhất</a></li>
+                <li><a href="#">Trả góp 0%</a></li>
+                <li><a href="#">Giá thấp</a></li>
+                <li><a href="#">Giá cao</a></li>
+                <li><a href="#">Ưu đãi online</a></li>
+            </ul>
+        </div>
+        <table class="list">
+            <tr>
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh/realme_c55_dd_1697044159327.png" />
+                        <a href="#realme C55 6GB-128GB">realme C55 6GB-128GB</a>
+                        <p>6GB-128GB | 8GB-256GB</p>
+                        <p>
+                            <span style="color:red;font-size:20px">4.390.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-600.000đ</span>
+                        </p>
+                        <p>
+                            MediaTek Helio G88 | 6.7 inch<br />
+                            | 8GB | 256 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh/oppo_a58_dd_1697044343639.png" />
+                        <a href="#OPPO A58 6GB-128GB">OPPO A58 6GB-128GB</a>
+                        <br />
+                        <p>
+                            <span style="color:red;font-size:20px">4.690.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-300.000đ</span>
+                        </p>
+                        <p>
+                            Helio G85 | 6.1 inch <br />
+                            |6 GB | 128 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh/samsung_galaxy_z_flip5_xanh_dd_tragop_1697044444881.png" />
+                        <a href="#Samsung Galaxy Z Flip5 5G 256GB">Samsung Galaxy Z Flip5 5G 256GB</a>
+                        <p>256GB | 512GB</p>
+                        <p>
+                            <span style="color:red;font-size:20px">21.990.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-4.000.000đ</span>
+                        </p>
+                        <p>
+                            Snapdragon 8 Gen 2 | 6.4 inch <br />
+                            | 8GB | 256 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+
+                    </fieldset>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh/xiaomi_13_lite_dd_docquyen_bh_1697044449174.png" />
+                        <a href="#Xiaomi 13 Lite 8GB-128GB">Xiaomi 13 Lite 8GB-128GB</a>
+
+                        <p>
+                            <span style="color:red;font-size:20px">7.990.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-2.700.000đ</span>
+                        </p>
+                        <p>
+                            Snapdragon 7 Gen 1 | 6.55 inch <br />
+                            | 8GB | 256 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh/oppo_a55_dd_1697044339400.png" />
+                        <a href="#OPPO A55 4GB-64GB">OPPO A55 4GB-64GB</a>
+
+                        <p>
+                            <span style="color:red;font-size:20px">3.390.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-600.000đ</span>
+                        </p>
+                        <p>
+                            Helio G35 | 6.5 inch | 4 GB <br />
+                            | 64 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh/oppo_a17k_dd_1697044333441.png" />
+                        <a href="#OPPO A17k 3GB-64GB">OPPO A17k 3GB-64GB</a>
+
+                        <p>
+                            <span style="color:red;font-size:20px">2.990.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-300.000đ</span>
+                        </p>
+                        <p>
+                            Helio G35 | 6.56 inch |<br />
+                            3GB | 64 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh/samsung_galaxy_a14_4g_dd_1697044360582.png" />
+                        <a href="#Samsung Galaxy A14 4G">Samsung Galaxy A14 4G</a>
+
+                        <p>
+                            <span style="color:red;font-size:20px">3.690.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-800.000đ</span>/4 ngày
+                        </p>
+                        <p>
+                            <br />
+                            Exynos 850 | 6.6 inch | 4GB | 128 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh/samsung_galaxy_a04_dd_1697044347937.png" />
+                        <a href="#Samsung Galaxy A04">Samsung Galaxy A04</a>
+                        <br /><br />
+                        <p>
+                            <span style="color:red;font-size:20px">2.390.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-600.000đ</span>
+                        </p>
+                        <p>
+                            Helio P35 | 6.5 inch |  8GB  <br />
+                            | 128 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh/xiaomi_redmi_note_12_pro_4g_dd_bh_1697044453639.png" />
+                        <a href="#Xiaomi Redmi Note 12 Pro 8GB-256GB">Xiaomi Redmi Note 12 Pro 8GB-256GB</a>
+
+                        <p>
+                            <span style="color:red;font-size:20px">7.190.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-800.000đ</span>
+                        </p>
+                        <p>
+                            Snapdragon 732G | 6.4 inch<br />
+                            | 8GB | 256 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+
+
+        <div id="menu1">
+            <ul>
+                <li><h3>Ưu tiên xem:</h3></li>
+                <li><a href="#">Bán chạy nhất</a></li>
+                <li><a href="#">Trả góp 0%</a></li>
+                <li><a href="#">Giá thấp</a></li>
+                <li><a href="#">Giá cao</a></li>
+                <li><a href="#">Ưu đãi online</a></li>
+            </ul>
+        </div>
+        <table class="list">
+            <tr>
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh sp1/ip-15-pro-max-dd.png" />
+                        <a href="#iPhone 15 Pro Max 256GB">iPhone 15 Pro Max 256GB</a>
+                        <p>256GB | 512GB | 1TB</p>
+                        <p>
+                            <span style="color:red;font-size:20px">34.990.000đ</span> &nbsp;&nbsp; chỉ từ<br />
+                            <span style="color:black;font-size:15px;text-align:right">4.694.500đ</span>/tháng
+                        </p>
+                        <p>
+                            Apple A17 Pro | 6.7 inch | 8GB |<br />
+                            256 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh sp1/ss-galaxy-s22-dd-icon.png" />
+                        <a href="#Samsung Galaxy S22 5G 128GB">Samsung Galaxy S22 5G 128GB</a>
+                        <br /><br /><br />
+                        <p>
+                            <span style="color:red;font-size:20px">11.990.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-10.000.000đ</span>
+                        </p>
+                        <p>
+                            Snapdragon 8 Gen 1 | 6.1 inch | 8GB |<br />
+                            128 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh sp1/oppo-reno8-t-4g-dd.png" />
+                        <a href="#Oppo Reno8 T 4G 256GB">Oppo Reno8 T 4G 256GB</a>
+                        <p>4G | 5G</p>
+                        <p>
+                            <span style="color:red;font-size:20px">7.290.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-1.200.000đ</span>
+                        </p>
+                        <p>
+                            MediaTek Helio G99 | 6.4 inch | 8GB |<br />
+                            256 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+
+                    </fieldset>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh sp1/Honor-X8A-8GB-128GB.jpg" />
+                        <a href="#Honor X8A 8GB-128GB">Honor X8A 8GB-128GB</a>
+
+                        <p>
+                            <span style="color:red;font-size:20px">3.990.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-1.000.000đ</span>
+                        </p>
+                        <p>
+                            MediaTek Helio G99 | 6.4 inch | 8GB |<br />
+                            256 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh sp1/Xiaomi-Redmi-Note-12-4Gb-128gb.jpg" />
+                        <a href="#Xiaomi Redmi Note 12 4GB-128GB">Xiaomi Redmi Note 12 4GB-128GB</a>
+
+                        <p>4GB - 128GB | 8GB - 128GB</p>
+
+                        <p>
+                            <span style="color:red;font-size:20px">4.290.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-700.000đ</span>
+                        </p>
+                        <p>
+                            4GB | 128GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh sp1/samsung-galaxy-a05s-dd-moi.png" />
+                        <a href="#Samsung Galaxy A05s 128GB">Samsung Galaxy A05s 128GB</a>
+
+                        <p>
+                            <span style="color:red;font-size:20px">3.990.000đ</span> &nbsp;&nbsp; chỉ từ<br />
+                            <span style="color:black;font-size:15px;text-align:right">709.500đ</span>/tháng
+                        </p>
+                        <p>
+                            Snapdragon 680 | 6.7 inch |<br />
+                            8GB | 256 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh sp1/oppo-reno10-5g.jpg" />
+                        <a href="#OPPO Reno10 5G 256GB">OPPO Reno10 5G 256GB</a>
+                        <p>256GB | 128GB </p>
+                        <p>
+                            <span style="color:red;font-size:20px">10.490.000đ</span> &nbsp;&nbsp; chỉ từ<br />
+                            <span style="color:black;font-size:15px;text-align:right">500.000đ</span>/4 ngày
+                        </p>
+                        <p>
+                            MediaTek Dimensity 7050 5G <br />
+                            | 6.7 inch | 8GB | 256 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh sp1/samsung-Galaxy-Z-Flip4-5G-128GB.jpg" />
+                        <a href="#Samsung Galaxy Z Flip4 5G 128GB">Samsung Galaxy Z Flip4 5G 128GB</a>
+                        <br /><br />
+                        <p>
+                            <span style="color:red;font-size:20px">12.990.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-11.000.000đ</span>/4 ngày
+                        </p>
+                        <p>
+                            Snapdragon 8+ Gen 1 <br />| 6.1 inch, 1.9 inch | <br />
+                            8GB | 128 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh sp1/Samsung-Galaxy-A34-5G.jpg" />
+                        <a href="#Samsung Galaxy A34 5G">Samsung Galaxy A34 5G</a>
+
+                        <p>
+                            <span style="color:red;font-size:20px">6.990.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-1.500.000đ</span>
+                        </p>
+                        <p>
+                            MediaTek Dimensity 1080 <br />
+                            | 6.4 inch | 8GB | 256 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+
+        <div id="menu1">
+            <ul>
+                <li><h3>Ưu tiên xem:</h3></li>
+                <li><a href="#">Bán chạy nhất</a></li>
+                <li><a href="#">Trả góp 0%</a></li>
+                <li><a href="#">Giá thấp</a></li>
+                <li><a href="#">Giá cao</a></li>
+                <li><a href="#">Ưu đãi online</a></li>
+            </ul>
+        </div>
+        <table class="list">
+            <tr>
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh/realme_c55_dd_1697044159327.png" />
+                        <a href="#realme C55 6GB-128GB">realme C55 6GB-128GB</a>
+                        <p>6GB-128GB | 8GB-256GB</p>
+                        <p>
+                            <span style="color:red;font-size:20px">4.390.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-600.000đ</span>
+                        </p>
+                        <p>
+                            MediaTek Helio G88 | 6.7 inch<br />
+                            | 8GB | 256 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh/oppo_a58_dd_1697044343639.png" />
+                        <a href="#OPPO A58 6GB-128GB">OPPO A58 6GB-128GB</a>
+                        <br />
+                        <p>
+                            <span style="color:red;font-size:20px">4.690.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-300.000đ</span>
+                        </p>
+                        <p>
+                            Helio G85 | 6.1 inch <br />
+                            |6 GB | 128 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh/samsung_galaxy_z_flip5_xanh_dd_tragop_1697044444881.png" />
+                        <a href="#Samsung Galaxy Z Flip5 5G 256GB">Samsung Galaxy Z Flip5 5G 256GB</a>
+                        <p>256GB | 512GB</p>
+                        <p>
+                            <span style="color:red;font-size:20px">21.990.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-4.000.000đ</span>
+                        </p>
+                        <p>
+                            Snapdragon 8 Gen 2 | 6.4 inch <br />
+                            | 8GB | 256 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+
+                    </fieldset>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh/xiaomi_13_lite_dd_docquyen_bh_1697044449174.png" />
+                        <a href="#Xiaomi 13 Lite 8GB-128GB">Xiaomi 13 Lite 8GB-128GB</a>
+
+                        <p>
+                            <span style="color:red;font-size:20px">7.990.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-2.700.000đ</span>
+                        </p>
+                        <p>
+                            Snapdragon 7 Gen 1 | 6.55 inch <br />
+                            | 8GB | 256 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh/oppo_a55_dd_1697044339400.png" />
+                        <a href="#OPPO A55 4GB-64GB">OPPO A55 4GB-64GB</a>
+
+                        <p>
+                            <span style="color:red;font-size:20px">3.390.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-600.000đ</span>
+                        </p>
+                        <p>
+                            Helio G35 | 6.5 inch | 4 GB <br />
+                            | 64 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh/oppo_a17k_dd_1697044333441.png" />
+                        <a href="#OPPO A17k 3GB-64GB">OPPO A17k 3GB-64GB</a>
+
+                        <p>
+                            <span style="color:red;font-size:20px">2.990.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-300.000đ</span>
+                        </p>
+                        <p>
+                            Helio G35 | 6.56 inch |<br />
+                            3GB | 64 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh/samsung_galaxy_a14_4g_dd_1697044360582.png" />
+                        <a href="#Samsung Galaxy A14 4G">Samsung Galaxy A14 4G</a>
+
+                        <p>
+                            <span style="color:red;font-size:20px">3.690.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-800.000đ</span>/4 ngày
+                        </p>
+                        <p>
+                            <br />
+                            Exynos 850 | 6.6 inch | 4GB | 128 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh/samsung_galaxy_a04_dd_1697044347937.png" />
+                        <a href="#Samsung Galaxy A04">Samsung Galaxy A04</a>
+                        <br /><br />
+                        <p>
+                            <span style="color:red;font-size:20px">2.390.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-600.000đ</span>
+                        </p>
+                        <p>
+                            Helio P35 | 6.5 inch |  8GB  <br />
+                            | 128 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+                    </fieldset>
+                </td>
+
+                <td id="dt">
+                    <fieldset>
+                        <img src="ảnh/xiaomi_redmi_note_12_pro_4g_dd_bh_1697044453639.png" />
+                        <a href="#Xiaomi Redmi Note 12 Pro 8GB-256GB">Xiaomi Redmi Note 12 Pro 8GB-256GB</a>
+
+                        <p>
+                            <span style="color:red;font-size:20px">7.190.000đ</span> &nbsp;&nbsp; <br />
+                            <span style="color:black;font-size:15px;text-align:right">-800.000đ</span>
+                        </p>
+                        <p>
+                            Snapdragon 732G | 6.4 inch<br />
+                            | 8GB | 256 GB
+                        </p>
+                        <button type="button" value="mua ngay">MUA NGAY</button>
+                        <button type="button" value="so sanh">SO SÁNH</button>
+
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+
+        <div class="st">
+            <h3 style="color:black">
+                Hãy cùng tìm hiểu về lịch sử và phát triển của điện thoại thông minh, các tính năng và thông số kỹ thuật<br />
+                quan trọng mà bạn cần biết khi nếu muốn mua một chiếc điện thoại phù hợp. FPT Shop cũng sẽ cung cấp<br />
+                cho bạn bảng thông số kỹ thuật và các thương hiệu phổ biến nhất đang kinh doanh để giúp bạn so sánh các<br />
+                sản phẩm và tìm ra chiếc điện thoại phù hợp nhất cho mình.
+            </h3>
+            <img src="ảnh sp1/1(1).png" />
+            <h3 style="color:black">
+                Lịch sử phát triển của điện thoại thông minh
+            </h3>
+            <h3 style="color:black">
+                Ngày đầu tiên - Sự ra đời của điện thoại di động
+            </h3>
+            <p>
+                Vào ngày 10 tháng 3 năm 1876, nhà khoa học người Scotland - Alexander Graham Bell đã được cấp bằng<br />
+                sáng chế cho việc phát minh ra điện thoại. Sự kiện này đã mở ra cách mạng viễn thông và gắn kết con người<br />
+                từ những nơi xa xôi thông qua giọng nói.
+            </p>
+            <p>
+                Trong giai đoạn đầu của lịch sử điện thoại, các máy điện thoại còn rất lớn và nặng, chỉ có thể được sử dụng<br />
+                tại các địa điểm cố định và có giới hạn về phạm vi. Cuộc đua đầu tiên trong việc phát triển điện thoại di động<br />
+                đã bắt đầu vào những năm 1940 và 1950 khi các nhà nghiên cứu và kỹ sư trên khắp thế giới bắt đầu tìm cách<br />
+                giảm kích thước và trọng lượng của điện thoại để có thể di động hơn.
+            </p>
+            <img src="ảnh sp1/1(2).png" />
+            <p>
+                Các điểm đáng chú ý trong giai đoạn này bao gồm việc ra mắt dịch vụ di động đầu tiên vào năm 1946 tại Hoa<br />
+                Kỳ, và việc giới thiệu các máy di động đầu tiên vào cuối những năm 1970 và đầu những năm 1980.
+            </p>
+            <h3 style="color:black">
+                Từ điện thoại di động đến điện thoại thông minh
+            </h3>
+            <p>
+                Thập kỷ 1990 chứng kiến sự bùng nổ thực sự của công nghệ di động với việc ra mắt các điện thoại di động<br />
+                thông minh (smartphone). Các thiết bị này không chỉ có khả năng gọi điện thoại mà còn tích hợp nhiều tính<br />
+                năng thông minh khác như: gửi tin nhắn, duyệt web, chơi game và chạy các ứng dụng đa dạng,…<br />
+
+                Motorola StarTAC, ra mắt năm 1996, được coi là một trong những smartphone đầu tiên trên thị trường. Từ<br />
+                đó, sự phát triển của điện thoại thông minh đã vượt bậc với sự xuất hiện của các hệ điều hành như Symbian,<br />
+                BlackBerry OS, iOS và Android.
+            </p>
+            <img src="ảnh sp1/1(3).jpg" />
+            <p>
+                Cùng các công ty công nghệ hàng đầu như Apple, Samsung, HTC và Google đã cùng nhau đưa ra các dòng<br />
+                điện thoại thông minh vượt trội, thúc đẩy cuộc cách mạng công nghệ di động và thay đổi cách mà con người<br />
+                tương tác với nhau và thế giới xung quanh.
+            </p>
+            <h3 style="color:black">
+                Bảng thông số kỹ thuật của smartphone hiện nay
+            </h3>
+            <p>Các thông số kỹ thuật chi tiết của từng sản phẩm điện thoại thông minh sẽ phụ thuộc vào từng phiên bản cụ<br/>
+            thể và sự thay đổi theo thời gian. Việc tìm hiểu và so sánh các thông số kỹ thuật là rất quan trọng khi chọn<br/>
+            mua một điện thoại di động phù hợp với nhu cầu và ngân sách của bạn.</p>
+        </div>
+    </section>
+</body>
+</html>
